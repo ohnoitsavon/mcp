@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta property="og:url"                content="http://www.ohnoitsavon.co.uk/mcp/help" />
+  <meta property="og:type"               content="website" />
+  <meta property="og:title"              content="Media Check Pro - Help" />
+  <meta property="og:description"        content="FFMPEG Audio and Video Checker and Converter" />
+  <meta property="og:image"              content="http://www.ohnoitsavon.co.uk/mcp/images/logo.png" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="400" />
+	
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org/",
+		"@type": "SoftwareApplication",
+		"name": "Media Check Pro",
+		"image": "http://www.ohnoitsavon.co.uk/mcp/images/logo.png",
+		"description": "FFMPEG Audio and Video Checker and Converter"
+	}
+	</script>
+  
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>	
+	<title>Media Check Pro - Help</title>
+	<meta name="description" content="FFMPEG Audio and Video Checker and Converter"/>
+    <meta name="keywords" content="ohnoitsAvon, Media, Check, Pro, MCP, Audio, Video, Convert, FFMPEG, Help" />
+	<meta name="DC.description" content="FFMPEG Audio and Video Checker and Converter" />
+	<link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+<div id="head">
+<h1>Media Check Pro</h1>
+<p>FFMPEG Audio and Video Checker and Converter</p>
+</div>
+<div id="main">
+<h2>Menu</h2>
+<ul class="menu">
+<li><a href="https://www.ohnoitsavon.co.uk/mcp">Home</a></li>
+<li><a href="#help">Help</a></li>
+<li><a href="#install">Installation</a></li>
+<li><a href="#gui">Graphical User Interface</a></li>
+<li><a href="#check">Checking Files</a></li>
+<ul class="menu">
+<li><a href="#single-check">Check Single File</a></li>
+<li><a href="#bulk-check">Bulk Check Folder</a></li>
+</ul>
+<li><a href="#convert">Converting Files</a></li>
+<ul class="menu">
+<li><a href="#single-convert">Convert Single File</a></li>
+<li><a href="#bulk-convert">Bulk Convert Folder</a></li>
+</ul>
+<li><a href="#cancel">Cancel Check or Conversion</a></li>
+<li><a href="#logs">Check and Conversion Logs</a></li>
+<li><a href="#advanced">Advanced Options</a></li>
+<li><a href="#errors">Errors</a></li>
+</ul>
+<h2><a id="help" href="#help"></a>Help</h2>
+<p>
+This guide will help you understand how to use Media Check Pro (MCP).
+</p>
+<h2><a id="install" href="#install"></a>Installation</h2>
+<p>
+Extract the .zip folder and run 'Media Check Pro.exe'.
+</p>
+<h2><a id="gui" href="#gui"></a>Graphical User Interface</h2>
+<p>
+After starting the program, you will be greeted with this window:
+</p>
+<img class="helpimg" style="max-width:483px;" src="images/screenshot.JPG" alt="Screenshot of Media Check Pro">
+<p>
+This is the main window that lets you perform the checks and conversions.  
+</p>
+<img class="helpimg" style="max-width:483px;" src="images/screenshotinfo.JPG" alt="Labeled Screenshot of Media Check Pro">
+<img class="helpimg" style="max-width:483px;" src="images/screenshotinfo1.JPG" alt="Labeled Screenshot of Media Check Pro in use">
+<img class="helpimg" style="max-width:483px;" src="images/screenshotinfo2.JPG" alt="Labeled Screenshot of Media Check Pro after failing">
+<img class="helpimg" style="max-width:483px;" src="images/screenshotinfo3.JPG" alt="Labeled Screenshot of Media Check Pro after success">
+<ol class="menu-ol">
+<li>File Menu – Gives access to programs functions. </li>
+<li>Help Menu – Gives access to the help document.</li>
+<li>Original File Type – The file type MCP searches for when bulk checking or converting.</li>
+<li>New File Type – The output file type when converting files.</li>
+<li>Check Single File – Select single file to check.</li>
+<li>Bulk Check Media Directory – Choose directory to search for files, then check them.</li>
+<li>Convert Single File – Select single file to convert.</li>
+<li>Bulk Convert Media Directory – Choose directory to search for files, then convert them.</li>
+<li>Progress Bar – Shows the progress of bulk checks and conversions.</li>
+<li>Log Output – Shows the progress of the check or conversion along with any errors.</li>
+<li>Check Level – Used to select what is reported during a check. Errors Only, or Errors and Warnings.</li>
+<li>Conversion Options – Used to select the pre-set conversion / remux options.</li>
+<li>FFMPEG CMDs – Displays ffmpeg commands used during conversions. This can be edited if required for advanced control.</li>
+<li>Progress Indicator – This indicates when the application is converting or checking.</li>
+<li>Cancel – Stops the current check or conversion.</li>
+<li>Show Log - If a check or conversion produces errors this button opens the list of files that have an issue.</li>
+<li>Clear Screen – Clears the Log Output (10) window.</li> 
+<li>Open Directory – Open the current media directory.</li>  
+</ol>
+<h2><a id="check" href="#check"></a>Checking Files</h2>
+<p>
+This section shows you how to check files.
+</p>
+<h2><a id="single-check" href="#single-check"></a>Check Single File</h2>
+<p>
+To check a single file, click the Check Single File button (5). Doing this will open a windows dialogue that will let you select the file you want to check. Choose a file then click 'Open'. You will then be presented with a dialogue box similar to this:
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/checkconfirm.JPG" alt="Check DLG Box">
+<p>
+If you click 'Yes' the check will start. If you click 'No' a message box will appear informing you the check has been cancelled. Click 'Ok' and you will be sent back to the main windows.
+</p>
+<p>
+When the check has finished you will get a message saying either the check has completed successfully, or that the check completed with errors. With ether message pressing ok will return you to the main window.
+</p>
+<p>
+If the check was successful you will see a window that looks like the one in Image 4 (GUI section). However, if the file has errors you will see a window that looks the one in Image 3 (GUI section).
+</p>
+<p>
+The check is now complete. 
+</p>
+<h2><a id="bulk-check" href="#bulk-check"></a>Bulk Check Folder</h2>
+<p>
+To check a folder the process is very similar to checking a single file.
+</p>
+<p>
+First, select the file type from the Original File Type menu (3). You can choose one of the pre-defined file types, or type your own in. If you select * (All Files) every file type will be checked, including none media files like pdf files and text documents. This will likely cause errors so use with caution.
+</p>
+<p>
+Once you have selected the file type, click the Bulk Check Media Directory button (6). Doing this will open a windows dialogue that will let you select the folder you want to check. Choose a folder and then click 'Select Folder'. You will then be presented with a dialogue box similar to this:
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/bulkcheck.JPG" alt="Bulk check DLG Box">
+<p>
+If you click 'Yes' the check will start. If you click 'No' a message box will appear informing you the check has been cancelled. Click 'Ok' and you will be sent back to the main windows.
+</p>
+<p>
+The folder you chose, along with all subfolders will be scanned for the media type you previously selected, then, each file that is found will be checked. If no files are found, you will receive this message:
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/nofiles.JPG" alt="No files error">
+<p>
+Clicking 'Ok' will send you back to the main window.
+</p>
+<p>
+When the check has finished you will get a message saying either the check has completed successfully, or that the check completed with errors. With ether message pressing ok will return you to the main window.
+</p>
+<p>
+If the check was successful you will see a window that looks like the one in Image 4 (GUI section). However, if the file has errors you will see a window that looks the one in Image 3 (GUI section).
+</p>
+<p>
+The check is now complete. 
+</p>
+<h2><a id="convert" href="#convert"></a>Converting Files</h2>
+<p>
+This section shows you how to convert files. 
+</p>
+<h2><a id="single-convert" href="#single-convert"></a>Convert Single File</h2>
+<p>
+To convert a single file, first select the file type you want to convert to from the New File Type drop-down list (4) once you have done that select the format/codec you want to use from the Conversion Options drop-down list (12). If you want to adjust the quality or other options, see the <a href="#advanced">Advanced Options</a> section. 
+</p>
+<p>
+Once you have selected your options click the Convert Single File button (7) doing this will open a windows dialogue that will let you select the file you want to convert. Choose a file then click 'Open'. You will then be presented with a dialogue box similar to this:
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/convertconfirm.JPG" alt="Convert DLG Box">
+<p>
+If you click 'Yes' the conversion will start. If you click 'No' a message box will appear informing you the conversion has been cancelled. Click 'Ok' and you will be sent back to the main windows.
+</p>
+<p>
+During the conversion you will see a command prompt window appears, you do not need to interact with this window, it is just a display of what FFMPEG is doing. 
+</p>
+<p>
+When the check has finished you will get a message saying either the conversion has completed successfully, or that the conversion completed with errors. With ether message pressing ok will return you to the main window.
+</p>
+<h2><a id="bulk-convert" href="#bulk-convert"></a>Bulk Convert Folder</h2>
+<p>
+To convert all files in a folder, you follow a similar process as converting a single file.
+</p>
+<p>
+First, select the file type you want to search for from the Original File Type menu (3). You can choose one of the pre-defined file types, or type your own in. If you select * (All Files) every file type will be converted, including none media files like pdf files and text documents. This will likely cause errors so use with caution.
+</p>
+<p>
+Next, select the file type you want to convert to from the New File Type drop-down list (4) once you have done that select the format/codec you want to use from the Conversion Options drop-down list (12). If you want to adjust the quality or other options, see the <a href="#advanced">Advanced Options</a> section.
+</p>
+<p>
+Once you have selected your options click the Bulk Convert Media Directory button (8) doing this will open a windows dialogue that will let you select the folder you want to convert. Choose a folder and then click 'Select Folder'. You will then be presented with a dialogue box similar to this:
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/bulkconvert.JPG" alt="Convert DLG Box">
+<p>
+If you click 'Yes' the conversion will start. If you click 'No' a message box will appear informing you the conversion has been cancelled. Click 'Ok' and you will be sent back to the main windows.
+</p>
+<p>
+The folder you chose, along with all subfolders will be scanned for the media type you previously selected, then, each file that is found will be converted. If no files are found, you will receive this message:
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/nofiles.JPG" alt="No files error">
+<p>
+Clicking 'Ok' will send you back to the main window.
+</p>
+<p>
+During the conversion you will see a command prompt window appears, you do not need to interact with this window, it is just a display of what FFMPEG is doing. 
+</p>
+<p>
+When the check has finished you will get a message saying either the conversion has completed successfully, or that the conversion completed with errors. With ether message pressing ok will return you to the main window.
+</p>
+<h2><a id="cancel" href="#cancel"></a>Cancel Check or Conversion</h2>
+<p>
+The process for cancelling a check or conversion is the same. At any point simply click the 'Cancel' button (15) and MCP will safely cancel the check or conversion.
+</p>
+<p>
+When the process has been stopped you will see a message like this:
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/cancel.JPG" alt="Cancel DLG Box">
+<p>
+Click 'Ok' and you will be taken back to the main window. 
+</p>
+<h2><a id="logs" href="#logs"></a>Check and Conversion Logs</h2>
+<p>
+During the checking and conversion process, log files are created. If there are no issues when dealing with your files these logs are deleted. However, if any errors are spotted the logs are kept.
+</p>
+<p>
+When a check or conversion is completed you will see a window similar the one in Image 3 or 4 (GUI section). You will notice in Image 3, which is what happens when a check returns errors, there is a button that says 'Show Log' (16). This button opens a saved text file that lists all files that contained errors from the previous run of the program. This file is saved in the root of the directory you asked to search / the directory where the single file you selected is stored. 
+</p>
+<p>
+With the information in the log, you should be able to locate the problematic files. When you do, you will notice another log file with the same name next to each file in question. This contains the ffmpeg log that was captured during the check or conversion of the file. Letting you see in detail what was wrong with the file.
+</p>
+<h2><a id="advanced" href="#advanced"></a>Advanced Options</h2>
+<p>
+Media Check Pro has some advanced options. 
+</p>
+<p>
+Error Levels - When checking files, you can choose the level of detail the check looks for, either Errors Only, or Errors and Warnings. This is done with the Check Level drop down (11). Errors only if the default and will only pick up things that would stop the video playing. Warnings will pick up anything that may be wrong with the video, even if it plays perfectly in your choice of video player you will most likely still get errors. 
+</p>
+<p> 
+Conversion Options - As mentioned in the conversion sections you can choose from a range of conversion options with the drop-down list (12). When you select one you will notice the text in the FFMPEG CMDs box (13) change. This is the list of commands that will be run when converting. Before converting, you can change the text in the text box to adjust the conversion options. Whatever is typed in the box will be run. The commands are standard ffmpeg commands that would go in between the input and output flags when using ffmpeg in command prompt. See this page for details. <a href="https://ffmpeg.org/ffmpeg.html" target="blank">https://ffmpeg.org/ffmpeg.html</a>.
+</p>
+<p>
+Clean Logs - When checking and converting files MCP creates some log files next to the original source file. After running MCP if you still see these it means the file had errors. As these files could build up MCP has a tool for cleaning them built in.
+</p>
+<p>
+To run this tool go to the help menu (2) then click 'Clean Log Files'. You will then be presented with this window:
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/cleandir.JPG" alt="Clean Log DLG Box">
+<p>
+Click 'Choose Directory' and choose the folder you want to clean. WARNING this will remove all files with the extension '.log' or '.xmcpcheck'.
+</p>
+<p>
+Once you have selected the folder you will be given a final confirmation window:
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/cleanconfirm.JPG" alt="Clean Log Warning Box">
+<p>
+Clicking 'Yes' will clean the files, clicking 'Cancel' will top the process.
+</p>
+<p>
+Once the process is complete you will see a message like this, informing you how many files have been deleted. Clicking 'Ok' will return you to the main window. 
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/cleanresult.JPG" alt="Clean Log Result">
+<h2><a id="errors" href="#errors"></a>Errors</h2>
+<p>
+Although you might see MCP say a media file has errors, there is only one error the program itself can encounter.
+</p>
+<p>
+On start-up, MCP looks for 'ffmpeg.exe' in the program folder. If this is not there you will see this message:
+</p>
+<img class="helpimg" style="max-width:362px;" src="images/ffmpeg.JPG" alt="FFMPEG Error Box">
+<p>
+Under normal usage, you should never see this message. However, if you delete or rename 'ffmpeg.exe' this message will appear. This error can also occur if you force quit the application then start it back up. This is because during the checking and conversion process 'ffmpeg.exe' is temporarily renamed. If the application is forcefully terminated during this time the file may not revert back to its original name, causing the error.
+</p>
+<p> 
+If this occurs, look in the folder that contains 'Media Check Pro.exe'. If you see a file that has a similar name to '00000000-000000000_ffmpeg.exe' where the 0s can be any number, rename it to 'ffmpeg.exe' then restart the program. If you cannot find this file, go to <a href="https://ffmpeg.zeranoe.com/builds/" target="blank">https://ffmpeg.zeranoe.com/builds/</a> and download the latest 64bit static windows build. Then place 'ffmpeg.exe' in the Media Check Pro folder.
+</p>
+<div id="footcwrite"></div>
+<script>
+	var d = new Date();
+	var n = d.getFullYear();
+	var div = document.getElementById('footcwrite');
+	div.innerHTML = '<p>Copyright &copy ' + n + ' ohnoitsAvon</p>';
+</script>   
+</footer>
+</div>
+</body>
+</html> 
