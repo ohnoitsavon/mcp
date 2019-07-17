@@ -1,0 +1,310 @@
+object MainForm: TMainForm
+  Left = 859
+  Height = 500
+  Top = 177
+  Width = 481
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Media Check Pro'
+  ClientHeight = 480
+  ClientWidth = 481
+  Constraints.MaxHeight = 500
+  Constraints.MaxWidth = 481
+  Constraints.MinHeight = 500
+  Constraints.MinWidth = 481
+  Menu = mmMCP
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.0.2.0'
+  object btnBCheck: TButton
+    Left = 8
+    Height = 23
+    Top = 72
+    Width = 225
+    Caption = 'Bulk Check Media Directory'
+    OnClick = btnBCheckClick
+    TabOrder = 4
+  end
+  object btnBConvert: TButton
+    Left = 249
+    Height = 23
+    Top = 72
+    Width = 224
+    Caption = 'Bulk Convert Media Directory'
+    OnClick = btnBConvertClick
+    TabOrder = 5
+  end
+  object btnSCheck: TButton
+    Left = 8
+    Height = 23
+    Top = 48
+    Width = 225
+    Caption = 'Check Single File'
+    OnClick = btnSCheckClick
+    TabOrder = 2
+  end
+  object btnSConvert: TButton
+    Left = 249
+    Height = 23
+    Top = 48
+    Width = 224
+    Caption = 'Convert Single File'
+    OnClick = btnSConvertClick
+    TabOrder = 3
+  end
+  object lbFileType: TLabel
+    Left = 8
+    Height = 23
+    Top = 8
+    Width = 78
+    AutoSize = False
+    Caption = 'Ori File Type:'
+    Font.Height = -14
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object lbFileType1: TLabel
+    Left = 249
+    Height = 23
+    Top = 8
+    Width = 89
+    AutoSize = False
+    Caption = 'New File Type:'
+    Font.Height = -14
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object cbbErrorLevel: TComboBox
+    Left = 248
+    Height = 23
+    Top = 392
+    Width = 224
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'Errors Only'
+      'Errors and Warnings'
+    )
+    Style = csDropDownList
+    TabOrder = 12
+    Text = 'Errors Only'
+  end
+  object mmoDisplay: TMemo
+    Left = 9
+    Height = 216
+    Top = 160
+    Width = 463
+    Lines.Strings = (
+      'mmoDisplay'
+    )
+    ReadOnly = True
+    ScrollBars = ssAutoVertical
+    TabOrder = 10
+  end
+  object btnCLRscr: TButton
+    Left = 398
+    Height = 17
+    Top = 144
+    Width = 75
+    Caption = 'Clear Screen'
+    OnClick = btnCLRscrClick
+    TabOrder = 8
+  end
+  object lblFilesCheckedCount: TLabel
+    Left = 8
+    Height = 18
+    Top = 136
+    Width = 465
+    Alignment = taCenter
+    AutoSize = False
+    Caption = ' '
+    ParentColor = False
+  end
+  object pbProgress: TProgressBar
+    Left = 9
+    Height = 28
+    Top = 104
+    Width = 464
+    TabOrder = 6
+  end
+  object lstFileList: TListBox
+    Left = 377
+    Height = 16
+    Top = 248
+    Width = 12
+    ItemHeight = 0
+    TabOrder = 16
+    Visible = False
+  end
+  object btnShowLog: TButton
+    Left = 8
+    Height = 17
+    Top = 144
+    Width = 75
+    Caption = 'Show Log'
+    OnClick = btnShowLogClick
+    TabOrder = 7
+  end
+  object pbWorking: TProgressBar
+    Left = 0
+    Height = 10
+    Top = 470
+    Width = 481
+    Smooth = True
+    TabOrder = 15
+  end
+  object btnOpendir: TButton
+    Left = 8
+    Height = 17
+    Top = 376
+    Width = 75
+    Caption = 'Open Dir'
+    OnClick = btnOpendirClick
+    TabOrder = 11
+  end
+  object cbbFType1: TComboBox
+    AnchorSideRight.Side = asrBottom
+    Left = 96
+    Height = 23
+    Top = 8
+    Width = 137
+    Anchors = [akTop, akRight]
+    AutoComplete = True
+    AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
+    AutoSize = False
+    ItemHeight = 15
+    TabOrder = 0
+    Text = 'cbbFType1'
+  end
+  object cbbFType2: TComboBox
+    Left = 343
+    Height = 23
+    Top = 8
+    Width = 129
+    AutoComplete = True
+    AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
+    ItemHeight = 15
+    OnChange = cbbFType2Change
+    TabOrder = 1
+    Text = 'cbbFType2'
+  end
+  object txtAdv: TEdit
+    Left = 113
+    Height = 23
+    Top = 440
+    Width = 359
+    TabOrder = 14
+  end
+  object btnCancel: TButton
+    Left = 406
+    Height = 17
+    Top = 144
+    Width = 67
+    Caption = 'Cancel'
+    OnClick = btnCancelClick
+    TabOrder = 9
+  end
+  object lbCheckLevel: TLabel
+    Left = 160
+    Height = 23
+    Top = 392
+    Width = 84
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Check Level:'
+    Font.Height = -14
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object lbFFCMD: TLabel
+    AnchorSideTop.Side = asrBottom
+    Left = 9
+    Height = 23
+    Top = 440
+    Width = 103
+    AutoSize = False
+    Caption = 'FFMPEG CMDs:'
+    Font.Height = -14
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object cbbFormat: TComboBox
+    Left = 248
+    Height = 23
+    Top = 416
+    Width = 224
+    ItemHeight = 15
+    OnChange = cbbFormatChange
+    ParentShowHint = False
+    Style = csDropDownList
+    TabOrder = 13
+  end
+  object lbFormat: TLabel
+    Left = 116
+    Height = 23
+    Top = 416
+    Width = 128
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Conversion Options:'
+    Font.Height = -14
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object dlgOpenSingleF: TOpenDialog
+    left = 336
+    top = 240
+  end
+  object mmMCP: TMainMenu
+    left = 275
+    top = 251
+    object miFile: TMenuItem
+      Caption = '&File'
+      object miCheckSF: TMenuItem
+        Caption = 'Check Single File'
+        OnClick = miCheckSFClick
+      end
+      object miCheckB: TMenuItem
+        Caption = 'Bulk Check Directory'
+        OnClick = miCheckBClick
+      end
+      object miConvSF: TMenuItem
+        Caption = 'Convert Single File'
+        OnClick = miConvSFClick
+      end
+      object miConvB: TMenuItem
+        Caption = 'Convert Media Directory'
+        OnClick = miConvBClick
+      end
+      object miExit: TMenuItem
+        Caption = 'Exit                                Alt+f4'
+        OnClick = miExitClick
+      end
+    end
+    object miHelp: TMenuItem
+      Caption = '&Help'
+      object miAbout: TMenuItem
+        Caption = 'About'
+        OnClick = miAboutClick
+      end
+      object miCleanLog: TMenuItem
+        Caption = 'Clean Log Files'
+        OnClick = miCleanLogClick
+      end
+      object miGPU: TMenuItem
+        Caption = 'miGPU'
+        OnClick = miGPUClick
+      end
+      object miHelpPage: TMenuItem
+        Caption = 'Help'
+        ShortCut = 112
+        OnClick = miHelpPageClick
+      end
+    end
+  end
+end

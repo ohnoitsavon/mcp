@@ -1,0 +1,278 @@
+!--!
+3GP
+Copy Codecs
+-vcodec copy -acodec copy
+x264 AAC
+-c:a aac -c:v libx264 -preset slow -crf 18 -vf format=yuv420p
+NVIDIA H264 AAC
+-c:a aac -c:v h264_nvenc -preset slow -qp 20 -vf format=yuv420p
+!--!
+AVI
+Copy Codecs
+-vcodec copy -acodec copy
+x264 AAC
+-c:a aac -c:v libx264 -preset slow -crf 18 -vf format=yuv420p
+NVIDIA H264 AAC
+-c:a aac -c:v h264_nvenc -preset slow -qp 20 -vf format=yuv420p
+XVID MP3
+-c:a libmp3lame -b:a 320k -c:v libxvid -qscale:v 4 -pix_fmt yuv420p
+!--!
+FLV
+Copy Codecs
+-vcodec copy -acodec copy
+x264 AAC
+-c:a aac -c:v libx264 -preset slow -crf 18 -vf format=yuv420p
+NVIDIA H264 AAC
+-c:a aac -c:v h264_nvenc -preset slow -qp 20 -vf format=yuv420p
+!--!
+M2TS
+Copy Codecs
+-vcodec copy -acodec copy
+x264 AC3
+-c:a ac3 -b:a 384k -c:v libx264 -preset slow -crf 18 -vf format=yuv420p
+NVIDIA H264 AC3
+-c:a ac3 -b:a 384k -c:v h264_nvenc -preset slow -qp 20 -vf format=yuv420p
+MPEG2 AC3 SD
+-c:a ac3 -b:a 192k -c:v mpeg2video -b:v 8M -refs 1 -bf 0 -vf format=yuv420p
+MPEG2 AC3 HD
+-c:a ac3 -b:a 384k -c:v mpeg2video -b:v 20M -refs 1 -bf 0 -vf format=yuv420p
+!--!
+M4V
+Copy Codecs
+-vcodec copy -acodec copy
+x264 AAC
+-c:a aac -c:v libx264 -preset slow -crf 18 -vf format=yuv420p
+NVIDIA H264 AAC
+-c:a aac -c:v h264_nvenc -preset slow -qp 20 -vf format=yuv420p
+!--!
+MKV
+Copy Codecs
+-vcodec copy -acodec copy
+x264 AAC
+-c:a aac -c:v libx264 -preset slow -crf 18 -vf format=yuv420p
+NVIDIA H264 AAC
+-c:a aac -c:v h264_nvenc -preset slow -qp 20 -vf format=yuv420p
+x265  AAC
+-c:a aac -c:v libx265 -preset slow -crf 20 -vf format=yuv420p
+NVIDIA H265 AAC
+-c:a aac -c:v hevc_nvenc -preset slow -qp 22 -vf format=yuv420p
+VP9 OPUS
+-c:a libopus -b:a 96k -c:v libvpx-vp9 -crf 24 -b:v 0 -pix_fmt yuv420p
+!--!
+MOV
+Copy Codecs
+-vcodec copy -acodec copy
+x264 AAC
+-c:a aac -c:v libx264 -preset slow -crf 18 -vf format=yuv420p
+NVIDIA H264 AAC
+-c:a aac -c:v h264_nvenc -preset slow -qp 20 -vf format=yuv420p
+x265  AAC
+-c:a aac -c:v libx265 -preset slow -crf 20 -vf format=yuv420p
+NVIDIA H265 AAC
+-c:a aac -c:v hevc_nvenc -preset slow -qp 22 -vf format=yuv420p
+!--!
+MP4
+Copy Codecs
+-vcodec copy -acodec copy
+x264 AAC
+-c:a aac -c:v libx264 -preset slow -crf 18 -vf format=yuv420p
+NVIDIA H264 AAC
+-c:a aac -c:v h264_nvenc -preset slow -qp 20 -vf format=yuv420p
+x265  AAC
+-c:a aac -c:v libx265 -preset slow -crf 20 -vf format=yuv420p
+NVIDIA H265 AAC
+-c:a aac -c:v hevc_nvenc -preset slow -qp 22 -vf format=yuv420p
+!--!
+MPEG
+Copy Codecs
+-vcodec copy -acodec copy
+MPEG2 MP3 SD
+-c:a libmp3lame -b:a 320k -c:v mpeg2video -b:v 8M -refs 1 -bf 0 -vf format=yuv420p
+MPEG2 MP3 HD
+-c:a libmp3lame -b:a 320k -c:v mpeg2video  -b:v 20M -refs 1 -bf 0 -vf format=yuv420p
+!--!
+MPG
+Copy Codecs
+-vcodec copy -acodec copy
+MPEG2 MP3 SD
+-c:a libmp3lame -b:a 320k -c:v mpeg2video -b:v 8M -refs 1 -bf 0 -vf format=yuv420p
+MPEG2 MP3 HD
+-c:a libmp3lame -b:a 320k -c:v mpeg2video -b:v 20M -refs 1 -bf 0 -vf format=yuv420p
+!--!
+TS
+Copy Codecs
+-vcodec copy -acodec copy
+MPEG2 AC3 SD
+-c:a ac3 -b:a 192k -c:v mpeg2video -b:v 8M -refs 1 -bf 0 -vf format=yuv420p
+MPEG2 AC3 HD
+-c:a ac3 -b:a 384k -c:v mpeg2video -b:v 20M -refs 1 -bf 0 -vf format=yuv420p
+!--!
+VOB
+Copy Codecs
+-vcodec copy -acodec copy
+PAL DVD
+-target pal-dvd
+NTSC DVD
+-target ntsc-dvd
+MPEG2 AC3 SD
+-c:a ac3 -b:a 192k -c:v mpeg2video -b:v 8M -refs 1 -bf 0 -vf format=yuv420p
+MPEG2 AC3 HD
+-c:a ac3 -b:a 384k -c:v mpeg2video -b:v 20M -refs 1 -bf 0 -vf format=yuv420p
+!--!
+WEBM
+Copy Codecs
+-vcodec copy -acodec copy
+VP9 OPUS
+-c:a libopus -b:a 96k -c:v libvpx-vp9 -crf 24 -b:v 0 -pix_fmt yuv420p
+!--!
+WMV
+Copy Codecs
+-vcodec copy -acodec copy
+MS-MPEG4 HQ
+-c:a wmav2 -c:v msmpeg4 -q:a 2 -q:v 2 -vf format=yuv420p
+MS-MPEG4 MQ
+-c:a wmav2 -c:v msmpeg4 -q:a 2 -q:v 5 -vf format=yuv420p
+MS-MPEG4 LQ
+-c:a wmav2 -c:v msmpeg4 -q:a 2 -q:v 10 -vf format=yuv420p
+!--!
+AAC
+Copy Codecs
+-vn -acodec copy
+AAC 128 kbps
+-vn -c:a aac -b:a 128k
+AAC 160 kbps
+-vn -c:a aac -b:a 160k
+AAC 192 kbps
+-vn -c:a aac -b:a 192k
+AAC 256 kbps
+-vn -c:a aac -b:a 256k
+!--!
+AIF
+PCM 16-Bit 44.1 kHz
+-vn -c:a pcm_s16be -af aformat=s16:44100
+PCM 16-Bit 48 kHz
+-vn -c:a pcm_s16be -af aformat=s16:48000
+PCM 16-Bit 96 kHz
+-vn -c:a pcm_s16be -af aformat=s16:96000
+PCM 24-Bit 44.1 kHz
+-vn -c:a pcm_s24be -af aformat=s32:44100
+PCM 24-Bit 48 kHz
+-vn -c:a pcm_s24be -af aformat=s32:48000
+PCM 24-Bit 96 kHz
+-vn -c:a pcm_s24be -af aformat=s32:96000
+PCM 32-Bit 44.1 kHz
+-vn -c:a pcm_f32be -af aformat=s32:44100
+PCM 32-Bit 48 kHz
+-vn -c:a pcm_f32be -af aformat=s32:48000
+PCM 32-Bit 96 kHz
+-vn -c:a pcm_f32be -af aformat=s32:96000
+!--!
+AIFF
+PCM 16-Bit 44.1 kHz
+-vn -c:a pcm_s16be -af aformat=s16:44100
+PCM 16-Bit 48 kHz
+-vn -c:a pcm_s16be -af aformat=s16:48000
+PCM 16-Bit 96 kHz
+-vn -c:a pcm_s16be -af aformat=s16:96000
+PCM 24-Bit 44.1 kHz
+-vn -c:a pcm_s24be -af aformat=s32:44100
+PCM 24-Bit 48 kHz
+-vn -c:a pcm_s24be -af aformat=s32:48000
+PCM 24-Bit 96 kHz
+-vn -c:a pcm_s24be -af aformat=s32:96000
+PCM 32-Bit 44.1 kHz
+-vn -c:a pcm_f32be -af aformat=s32:44100
+PCM 32-Bit 48 kHz
+-vn -c:a pcm_f32be -af aformat=s32:48000
+PCM 32-Bit 96 kHz
+-vn -c:a pcm_f32be -af aformat=s32:96000
+!--!
+FLAC
+FLAC 16-Bit 44.1 kHz
+-vn -af aformat=s16:44100
+FLAC 16-Bit 48 kHz
+-vn -af aformat=s16:48000
+FLAC 16-Bit 96 kHz
+-vn -af aformat=s16:96000
+FLAC 24-Bit 44.1 kHz
+-vn -af aformat=s32:44100
+FLAC 24-Bit 48 kHz
+-vn -af aformat=s32:48000
+FLAC 24-Bit 96 kHz
+-vn -af aformat=s32:96000
+!--!
+M4A
+Copy Codecs
+-vn -acodec copy
+AAC 128 kbps
+-vn -c:a aac -b:a 128k
+AAC 160 kbps
+-vn -c:a aac -b:a 160k
+AAC 192 kbps
+-vn -c:a aac -b:a 192k
+AAC 256 kbps
+-vn -c:a aac -b:a 256k
+!--!
+MP3
+Copy Codecs
+-vn -acodec copy
+MP3 128 kbps
+-vn -c:a libmp3lame -b:a 128k
+MP3 192 kbps
+-vn -c:a libmp3lame -b:a 192k
+MP3 256 kbps
+-vn -c:a libmp3lame -b:a 256k
+MP3 320 kbps
+-vn -c:a libmp3lame -b:a 320k
+!--!
+OGG
+Copy Codecs
+-vn -acodec copy
+OPUS 32 kbps
+-vn -c:a libopus -b:a 32k
+OPUS 64 kbps
+-vn -c:a libopus -b:a 64k
+OPUS 96 kbps
+-vn -c:a libopus -b:a 96k
+OPUS 128 kbps
+-vn -c:a libopus -b:a 128k
+!--!
+WAV
+PCM 16-Bit 44.1 kHz
+-vn -c:a pcm_s16le -af aformat=s16:44100
+PCM 16-Bit 48 kHz
+-vn -c:a pcm_s16le -af aformat=s16:48000
+PCM 16-Bit 96 kHz
+-vn -c:a pcm_s16le -af aformat=s16:96000
+PCM 24-Bit 44.1 kHz
+-vn -c:a pcm_s24le -af aformat=s32:44100
+PCM 24-Bit 48 kHz
+-vn -c:a pcm_s24le -af aformat=s32:48000
+PCM 24-Bit 96 kHz
+-vn -c:a pcm_s24le -af aformat=s32:96000
+PCM 32-Bit 44.1 kHz
+-vn -c:a pcm_f32le -af aformat=s32:44100
+PCM 32-Bit 48 kHz
+-vn -c:a pcm_f32le -af aformat=s32:48000
+PCM 32-Bit 96 kHz
+-vn -c:a pcm_f32le -af aformat=s32:96000
+!--!
+WMA
+Copy Codecs
+-vn -acodec copy
+WMAv2 128 kbps
+-vn -c:a wmav2 -b:a 128k
+WMAv2 160 kbps
+-vn -c:a wmav2 -b:a 160k
+WMAv2 192 kbps
+-vn -c:a wmav2 -b:a 192k
+WMAv2 256 kbps
+-vn -c:a wmav2 -b:a 256k
+!--!
+
+
+
+
+
+
+
